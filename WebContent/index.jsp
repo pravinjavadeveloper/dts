@@ -10,6 +10,9 @@
 	<form action="login" method="post">
 		<table>
 			<tr>
+				<td colspan="3"><font color="red"><%=request.getAttribute("msg")!=null ? request.getAttribute("msg") : "" %></font></td>
+			</tr>
+			<tr>
 				<td>User Name</td>
 				<td>:</td>
 				<td><input name="username" placeholder="username" /></td>
@@ -17,7 +20,7 @@
 			<tr>
 				<td>Password</td>
 				<td>:</td>
-				<td><input name="password" placeholder="password" /></td>
+				<td><input type="password" name="password" placeholder="password" /></td>
 			</tr>
 			<tr>
 				<td></td>
