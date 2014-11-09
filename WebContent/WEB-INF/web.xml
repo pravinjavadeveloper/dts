@@ -1,34 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="WebApp_ID" version="2.5">
-	<display-name>test</display-name>
-	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
-	</welcome-file-list>
-	<context-param>
-		<param-name>title</param-name>
-		<param-value>Defect Tracking System</param-value>
-	</context-param>
-	<servlet>
-		<description>Login Servlet</description>
-		<display-name>Login</display-name>
-		<servlet-name>Login</servlet-name>
-		<servlet-class>com.dts.servlet.Login</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Login</servlet-name>
-		<url-pattern>/login</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<description></description>
-		<display-name>RegistratorUser</display-name>
-		<servlet-name>RegistratorUser</servlet-name>
-		<servlet-class>com.dts.servlet.RegistratorUser</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>RegistratorUser</servlet-name>
-		<url-pattern>/registratorUser</url-pattern>
-	</servlet-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>title</param-name>
+    <param-value>Defect Tracking System</param-value>
+  </context-param>
+  <servlet>
+    <description>Login Servlet</description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.dts.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegistratorUser</display-name>
+    <servlet-name>RegistratorUser</servlet-name>
+    <servlet-class>com.dts.servlet.RegistratorUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistratorUser</servlet-name>
+    <url-pattern>/registratorUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ModulesAddEdit</display-name>
+    <servlet-name>ModulesAddEdit</servlet-name>
+    <servlet-class>com.dts.servlet.ModulesAddEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModulesAddEdit</servlet-name>
+    <url-pattern>/modulesAddEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SoftwaresAddEdit</display-name>
+    <servlet-name>SoftwaresAddEdit</servlet-name>
+    <servlet-class>com.dts.servlet.SoftwaresAddEdit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SoftwaresAddEdit</servlet-name>
+    <url-pattern>/softwaresAddEdit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Modules</display-name>
+    <servlet-name>Modules</servlet-name>
+    <servlet-class>com.dts.servlet.Modules</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Modules</servlet-name>
+    <url-pattern>/modules</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Softwares</display-name>
+    <servlet-name>Softwares</servlet-name>
+    <servlet-class>com.dts.servlet.Softwares</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Softwares</servlet-name>
+    <url-pattern>/softwares</url-pattern>
+  </servlet-mapping>
 </web-app>

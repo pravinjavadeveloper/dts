@@ -2,6 +2,7 @@ package com.dts.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DbUtil {
@@ -31,6 +32,15 @@ public class DbUtil {
 	
 	public static Connection getConnection(){
 		return connection;
+	}
+
+	
+	public static ResultSet getResultSet(String query) throws SQLException {
+		return getConnection().createStatement().executeQuery(query);
+	}
+
+	public static void executeUpdate(String query) throws SQLException {
+		getConnection().createStatement().executeUpdate(query);
 	}
 	
 }
